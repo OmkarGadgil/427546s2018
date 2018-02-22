@@ -1,0 +1,243 @@
+@article {CGF:CGF12990,
+author = {Wang, Z. and Esturo, J. Martinez and Seidel, H.-P. and Weinkauf, T.},
+title = {Stream Line–Based Pattern Search in Flows},
+journal = {Computer Graphics Forum},
+volume = {36},
+number = {8},
+issn = {1467-8659},
+url = {http://dx.doi.org/10.1111/cgf.12990},
+doi = {10.1111/cgf.12990},
+pages = {7--18},
+keywords = {visualization, pattern search, stream lines, Categories and Subject Descriptors (according to ACM CCS): I.3.3 [Computer Graphics]: Picture/Image Generation–Line and curve generation},
+year = {2017},
+}
+
+
+@article {CGF:CGFCGF122_0095,
+author = {Van Campenhout, Jan M. and Lasure, Roeland},
+title = {PRIP – A Parallel Raster Image Processor},
+journal = {Computer Graphics Forum},
+volume = {12},
+number = {2},
+publisher = {Blackwell Science Ltd},
+issn = {1467-8659},
+url = {http://dx.doi.org/10.1111/1467-8659.1220095},
+doi = {10.1111/1467-8659.1220095},
+pages = {95--104},
+keywords = {Ring structure, strip parallelism, implicit parallelism, RIP},
+year = {1993},
+}
+
+
+
+@article{RIFFNALLERSCHIEFER201866,
+title = "Physics-based deformation of subdivision surfaces for shared virtual worlds",
+journal = "Computers & Graphics",
+volume = "71",
+pages = "66 - 76",
+year = "2018",
+issn = "0097-8493",
+doi = "https://doi.org/10.1016/j.cag.2017.12.005",
+url = "http://www.sciencedirect.com/science/article/pii/S0097849317302182",
+author = "Andreas Riffnaller-Schiefer and Ursula H. Augsdörfer and Dieter W. Fellner",
+keywords = "Subdivision surfaces, Isogeometric analysis, Interactive, Soft-body, Web service"
+}
+
+
+
+@article{Martin199353,
+title = "MoG: Molecular graphics software for the Commodore Amiga ",
+journal = "Journal of Molecular Graphics ",
+volume = "11",
+number = "1",
+pages = "53 - 55",
+year = "1993",
+note = "",
+issn = "0263-7855",
+doi = "https://doi.org/10.1016/0263-7855(93)85008-E",
+url = "https://www.sciencedirect.com/science/article/pii/026378559385008E",
+author = "Andrew C.R. Martin",
+keywords = "desktop molecular modeling",
+keywords = "computer graphics",
+keywords = "personal computers "
+}
+
+
+
+@ARTICLE{7852440, 
+author={C. Li and G. Baciu and Y. Han}, 
+journal={IEEE Transactions on Visualization and Computer Graphics}, 
+title={StreamMap: Smooth Dynamic Visualization of High-Density Streaming Points}, 
+year={2018}, 
+volume={24}, 
+number={3}, 
+pages={1381-1393}, 
+keywords={Data visualization;Estimation;Heuristic algorithms;Interpolation;Kernel;Market research;Visualization;Information visualization;density map;scatterplots;streaming data;time-varying;trend visualization}, 
+doi={10.1109/TVCG.2017.2668409}, 
+ISSN={1077-2626}, 
+month={March},}
+
+
+@INPROCEEDINGS{378174, 
+author={S. Han and D. B. Goldgof and K. W. Bowyer}, 
+booktitle={1993 (4th) International Conference on Computer Vision}, 
+title={Using hyperquadrics for shape recovery from range data}, 
+year={1993}, 
+volume={}, 
+number={}, 
+pages={492-496}, 
+keywords={computer vision;image reconstruction;image representation;arbitrary convex polyhedron;computer vision;fitting method;geometric bound;hyperquadric model;hyperquadrics;implicit model;rough fit;shape recovery;shape recovery from range data;shape representation;Application software;Computer science;Computer vision;Data mining;Equations;Face detection;Graphics;Polynomials;Shape;Surface fitting}, 
+doi={10.1109/ICCV.1993.378174}, 
+ISSN={}, 
+month={May},}
+
+
+
+@ARTICLE{8103319,
+author = {},
+journal = {IEEE Computer Graphics and Applications},
+title = {Computer Graphics Animation for Objective Self-Evaluation},
+year = {2017},
+volume = {37},
+number = {6},
+pages = {5-9},
+keywords={Animation;Motion measurement;Education;Computer graphics},
+doi = {10.1109/MCG.2017.4031074},
+url = {doi.ieeecomputersociety.org/10.1109/MCG.2017.4031074},
+ISSN = {0272-1716},
+month={November/December}
+}
+
+
+@ARTICLE{,
+author = {},
+journal = {IEEE Computer Graphics and Applications},
+title = {Visualizing the Stock Market Crash},
+year = {1993},
+volume = {13},
+number = {},
+pages = {14-16},
+keywords={},
+doi = {10.1109/MCG.1993.10012},
+url = {doi.ieeecomputersociety.org/10.1109/MCG.1993.10012},
+ISSN = {0272-1716},
+month={03}
+}
+
+
+@Article{Zhou2018,
+author="Zhou, Xianen
+and Wang, Yaonan
+and Zhu, Qing
+and Xiao, Changyan
+and Lu, Xiao",
+title="SSG: superpixel segmentation and GrabCut-based salient object segmentation",
+journal="The Visual Computer",
+year="2018",
+month="Jan",
+day="22",
+abstract="Saliency detection is a popular topic for image processing recently. In this paper, we propose a simple, robust and fast salient object segmentation framework. Firstly, we develop a novel saliency map segmentation strategy, named SSG which consists of superpixel region growing, superpixel Density-Based Spatial Clustering of Applications with Noise (DBSCAN) clustering and iterated graph cuts (GrabCut), where DBSCAN makes similar background regions cluster as a whole, region growing groups similar regions together as much as possible, GrabCut segments salient objects accurately. Then, the proposed SSG is combined with saliency detection to abstract salient objects. Experimental results on three benchmark datasets demonstrate that the proposed method achieves the favorable performance than many recent state-of-the-art methods in terms of precision, recall, F-measure and execution time.",
+issn="1432-2315",
+doi="10.1007/s00371-018-1471-4",
+url="https://doi.org/10.1007/s00371-018-1471-4"
+}
+
+@Article{Adelson1993,
+author="Adelson, Stephen J.
+and Hodges, Larry F.",
+title="Stereoscopic ray-tracing",
+journal="The Visual Computer",
+year="1993",
+month="Mar",
+day="01",
+volume="10",
+number="3",
+pages="127--144",
+abstract="In this paper, we describe a method to create an approximate ray-traced stereoscopic pair by transforming a fully raytraced left-eye view into an inferred right-eye view. Performance results from evaluating several random scenes, which indicate that the second view in a stereoscopic image can be computed with as little as 5{\%} of the effort required to fully ray-trace the first view, are presented. We also discuss worst-case performance of our algorithm and demonstrate that our technique is always at least as efficient as two passes of a standard ray-tracer.",
+issn="1432-2315",
+doi="10.1007/BF01900903",
+url="https://doi.org/10.1007/BF01900903"
+}
+
+
+
+@article{Maybury:1993:BPI:152941.1064730,
+ author = {Maybury, Mark T.},
+ title = {Book Preview: Intelligent MultiMedia Interfaces Edited by Mark T. Maybury (MIT Press)},
+ journal = {SIGART Bull.},
+ issue_date = {April 1993},
+ volume = {4},
+ number = {2},
+ month = apr,
+ year = {1993},
+ issn = {0163-5719},
+ pages = {18--21},
+ numpages = {4},
+ url = {http://doi.acm.org/10.1145/152941.1064730},
+ doi = {10.1145/152941.1064730},
+ acmid = {1064730},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+
+@article{Shu:2017:PLT:3151031.3095816,
+ author = {Shu, Zhixin and Hadap, Sunil and Shechtman, Eli and Sunkavalli, Kalyan and Paris, Sylvain and Samaras, Dimitris},
+ title = {Portrait Lighting Transfer Using a Mass Transport Approach},
+ journal = {ACM Trans. Graph.},
+ issue_date = {January 2018},
+ volume = {37},
+ number = {1},
+ month = oct,
+ year = {2017},
+ issn = {0730-0301},
+ pages = {2:1--2:15},
+ articleno = {2},
+ numpages = {15},
+ url = {http://doi.acm.org/10.1145/3095816},
+ doi = {10.1145/3095816},
+ acmid = {3095816},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Face relighting, histogram matching, mass transport},
+}
+
+
+
+@inproceedings{Durschmid:2017:PMD:3132787.3139208,
+ author = {D\"{u}rschmid, Tobias and S\"{o}chting, Maximilian and Semmo, Amir and Trapp, Matthias and D\"{o}llner, J\"{u}rgen},
+ title = {ProsumerFX: Mobile Design of Image Stylization Components},
+ booktitle = {SIGGRAPH Asia 2017 Mobile Graphics \& Interactive Applications},
+ series = {SA '17},
+ year = {2017},
+ isbn = {978-1-4503-5410-3},
+ location = {Bangkok, Thailand},
+ pages = {1:1--1:8},
+ articleno = {1},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/3132787.3139208},
+ doi = {10.1145/3132787.3139208},
+ acmid = {3139208},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {design, effect composition, image stylization, interaction, mobile devices, rapid prototyping},
+}
+
+
+@inproceedings{Aupperle:1993:HIA:166117.166137,
+ author = {Aupperle, Larry and Hanrahan, Pat},
+ title = {A Hierarchical Illumination Algorithm for Surfaces with Glossy Reflection},
+ booktitle = {Proceedings of the 20th Annual Conference on Computer Graphics and Interactive Techniques},
+ series = {SIGGRAPH '93},
+ year = {1993},
+ isbn = {0-89791-601-8},
+ location = {Anaheim, CA},
+ pages = {155--162},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/166117.166137},
+ doi = {10.1145/166117.166137},
+ acmid = {166137},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {adaptive meshing, global illumination, radiosity, raytracing},
+}

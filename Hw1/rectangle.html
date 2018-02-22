@@ -1,0 +1,49 @@
+<!--<%-- 
+    Document   : index
+    Created on : 19 Feb, 2018, 6:20:34 PM
+    Author     : omkar
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%> --!>
+<!DOCTYPE html>
+
+<html>
+<head>
+<h2>Canvas for drawing Rectangle</h2>
+
+<body bgcolor="grey">
+<canvas width="900" height="300" id="myCanvas" style="background-color:white;border:5px double #000000";></canvas><br /><br />
+
+<form>
+<b> Enter the co-ordinates for rectangle in below input fields </br> </br></b>
+co-ordinate X1 <input type="text" id="x1"><br><br>
+co-ordinate Y1 <input type="text" id="y1"><br><br>
+co-ordinate X2 <input type="text" id="x2"><br><br>
+co-ordinate Y2 <input type="text" id="y2"><br><br>
+ </form>
+ 
+<script>
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');    
+
+function draw(){
+    var x1 = document.getElementById("x1").value;
+    var x2 = document.getElementById("x2").value;
+    var y1 = document.getElementById("y1").value;
+    var y2 = document.getElementById("y2").value;
+    
+    context.strokeStyle="red";
+    context.rect(x1,x2,y1,y2);
+    context.stroke();
+	
+}
+
+</script>
+<br><br>
+<input type="button" value="Create" onclick="draw()">
+ </body>
+ </head>
+ </html>
+ 
+
+
