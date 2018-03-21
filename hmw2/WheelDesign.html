@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> Vehicle Wheel Design for Law offender! </title>	
+
+</head>
+
+
+<body>
+<div id="myDiv">
+<section id="Inputs">
+<header>Wheel Design for Law Offender</header>
+<p id = "Select">  </p>
+<br/>
+Radius of a Wheel: <input id="X0"> &nbsp; &nbsp;&nbsp;
+Enter score of the Offender: <input id="Y0">
+<br/> 
+Select wheel Color: <input type="color" id="colorChoose">
+Wheel thickness: <input id="thickness">
+<!-- A<input id="A">
+B<input id="B"> -->
+
+<br/>
+<br/>
+<button onClick="drawShape()"> Draw Wheel </button>
+<button onClick="clearCanvas()"> Clear </button>
+
+<br/>
+<br/>
+
+</section>
+<div style="position: absolute; margin: 0px; padding: 0px;">
+<canvas id="myCanvas" width="700" height="500" style="border:2px dotted; position: relative;">Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+
+
+<script>
+	var canvas = document.getElementById("myCanvas");
+	var cntx = canvas.getContext("2d");
+	var canvasData = cntx.getImageData(0,0,canvas.width,canvas.height);
+	
+	function drawPixel(x,y,r,g,b,a){
+		var indx = (x + y * canvas.width)* 4;
+
+		canvasData.data[indx + 0] = r;
+		canvasData.data[indx + 1] = g;
+		canvasData.data[indx + 2] = b;
+		canvasData.data[indx + 3] = a;
+
+  }
+  
+  function drawShape(x,y,r,g,b,a){
+    clearCanvas();
+    var radius = parseInt(document.getElementById("X0").value);
+    var score = parseInt(document.getElementById("Y0").value);
+//alert(document.getElementById('colorChoose').value);
+    cntx.fillStyle = document.getElementById('colorChoose').value;
+    cntx.fill();
+    cntx.strokeStyle = document.getElementById('colorChoose').value;
+    cntx.lineWidth = document.getElementById('thickness').value; 
+
+    if(score < 3 || score > 100){
+      alert("Enter valid score");
+    }else if(score > 79){
+      drawEllipse(radius, score);
+    }else{
+      drawPolygon(radius, score);
+    }
+  }
+
+  function clearCanvas() {
+    
+    cntx.clearRect(0, 0, canvas.width, canvas.height);
+    
+  }
+  
+  function drawPolygon(radius, sides) {
+    
+      var x= 200;
+      var y = 200;
+      var a = ((Math.PI * 2)/sides);
+
+      cntx.beginPath();
+      cntx.translate(x,y);
+      cntx.moveTo(radius,0);
+      for (var i = 1; i < sides; i++) {
+        cntx.lineTo(radius*Math.cos(a*i),radius*Math.sin(a*i));
+      }
+      cntx.closePath();
+      cntx.stroke();
+    }
+
+	function drawEllipse(radius, score){
+
+		var x0 = 200;
+		var y0 = 200;
+		var A = 100;
+		var B = score;
+
+		var X = A;
+		var Y = 0;
+		var err = 0;
+
+		var ASq = A * A;
+		var BSq = B * B;
+		var twoBSq = 2 * BSq;
+		var twoASq = 2 * ASq;
+		var ABSq = ASq * BSq;
+		var BSqXSq = BSq * X * X;
+		var stoppingX = twoBSq * X;
+		var stoppingY = 0;
+
+
+		while(stoppingX >= stoppingY){
+      var bigint = parseInt(document.getElementById('colorChoose').value, 16);
+      var r = (bigint >> 16) & 255;
+      var g = (bigint >> 8) & 255;
+      var b = bigint & 255;
+
+			drawPixel(X + x0,Y + y0,r,g,b,255);
+			drawPixel(-X + x0,Y + y0,r,g,b,255);
+			drawPixel(-X + x0,-Y + y0,r,g,b,255);
+			drawPixel(X + x0,-Y + y0,r,g,b,255);
+			Y++;
+			stoppingY += twoASq;
+			err = BSqXSq + ASq * Y * Y - ABSq + stoppingY + ASq;
+			if(2 * err + BSq - stoppingX > 0){
+				X--;
+				stoppingX -= twoBSq;
+				BSqXSq = BSq * X * X;
+			}
+		}
+
+		X = 0;
+		Y = B;
+		err = 0;
+		var ASqYSq = ASq * Y * Y;
+		var stoppingX = 0;
+		var stoppingY = twoASq * Y;
+
+
+		while(stoppingY > stoppingX){
+			drawPixel(X + x0,Y + y0,255,0,0,255);
+			drawPixel(-X + x0,Y + y0,255,0,0,255);
+			drawPixel(-X + x0,-Y + y0,255,0,0,255);
+			drawPixel(X + x0,-Y + y0,255,0,0,255);
+			X++;
+			stoppingX += twoBSq;
+			err = ASqYSq + BSq * X * X - ABSq + stoppingY + ASq;
+			if(2 * err + BSq - stoppingX > 0){
+				Y--;
+				stoppingY -= twoASq;
+				ASqYSq = ASq * Y * Y;
+			}
+		}
+  
+		cntx.putImageData(canvasData,0,0);
+	}
+	
+</script>
+<style type ="text/css">
+
+
+body{
+background-color: gray;
+}
+
+#Inputs{
+text-align:center;
+color: black;
+}
+
+#myCanvas{
+
+position: absolute;
+left:400px;
+background-color:#FBFCFC;
+
+}
+header{text-align:center;
+color: Yellow;
+font-size:3em;
+}	
+#Select{
+position:relative;
+color: darkblue;
+font-size:18px;
+text-align:center;
+}	
+</style>
+</div>
+</body>
+</html>
