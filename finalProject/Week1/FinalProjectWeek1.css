@@ -1,0 +1,30 @@
+#container
+{
+	border:1px solid;
+	width: 1800px;
+	height: 1105px;
+	margin-left: auto;
+	margin-right : auto;
+	padding: 10px;
+}
+#ctopright
+{
+	margin-left : 915px;
+	float: right;
+	text: Side View;
+}	
+
+#ctopleft
+{
+	margin-left : -3px;
+	margin-top: -482px;
+	float: left;
+}
+
+#cbottomleft
+{
+	margin-top: 10px;
+	margin-left: -3px;
+	float : left;
+}
+
