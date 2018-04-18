@@ -1,0 +1,27 @@
+
+
+Project Objective: To create and store a 3D object, apply transformations (rotate, scale, sheer), generate different projections etc.
+Progress Report:
+Week 1 implementation: Creation of 3D object.
+I have used the example of a house and created three elevations for it namely top view, front view and side view.
+For implementing this I have used the salable vector graphics in html 5.
+
+Week 2: 3D transformations 
+In this week i was able to implement translation on the house using the scalable vector graphics. Given the house (3D) the user can see its translation on the webpage upon clicking the translate button.
+
+Week 3: 3D transformations (Continued)
+In this week i was able to implement the remaining features like scaling,rotation,shear on the house using the scalable vector graphics. Given the house (3D) the user can see its translation, ratation,scaling and shearing on the webpage upon clicking the respective button.
+
+Week 4: In this week i have implemented the texture/environment/bump mapping for the House.
+
+
+Challenges faced:
+I had to learn the concept of scalable vector graphics(SVG) and all the elements associated with it and then had to implement the same. 
+
+Understanding the import xport and embedding of the object along with the co-ordinates mapping for the transformation matrix.
+
+Future Scope: In the coming weeks I will be using the work done till this week to implement the mentioned additional features in the project objective.
+
+Comp 5460 	Project  Report	Omkar Gadgil
+UID: 01737244	                                   	omkar_gadgil@student.uml.edu
+
