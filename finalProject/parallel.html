@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Parallel views of a cube</title>
+    </head>
+    <body>
+     <ul>
+           
+            <li><input type="button" name="home" value="Home" title="Home" onclick="location.href='MainPage.html';"> - Home<br><br></li>
+        </ul>
+        <p><b>Parallel Views for Cube</b></p>
+        <br>
+       
+       
+
+<br><br>
+<svg width="370" height="350" style="border: double">
+    <!--isometric-->  
+    <polyline points="120,300 120,200 34,150 34,250 120,300" style="fill:orange;stroke:black;stroke-width:2"/>
+    <polyline points="120,300 120,200 206,150 206,250 120,300" style="fill:blue;stroke:black;stroke-width:2"/>
+    <polyline points="120,200 34,150 120,101 206,150 120,200" style="fill:white;stroke:black;stroke-width:2"/>
+    <line x1="120" y1="101" x2="120" y2="201" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="120" y1="201" x2="34" y2="250" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="120" y1="201" x2="206" y2="250" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <text x="130" y="25">Isometric view</text>
+</svg>
+<svg width="370" height="350" style="border: double">
+    <!--Dimetric-->
+    <polyline points="120,300 120,200 27,166 27,266 120,300" style="fill:orange;stroke:black;stroke-width:2"/>
+    <polyline points="120,300 120,200 213,166 213,266 120,300" style="fill:blue;stroke:black;stroke-width:2"/>
+    <polyline points="120,200 27,166 120,133 213,166 120,200" style="fill:white;stroke:black;stroke-width:2"/>
+    <line x1="120" y1="133" x2="120" y2="233" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="120" y1="233" x2="213" y2="266" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="120" y1="233" x2="27" y2="266" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <text x="130" y="25">Dimetric view</text> 
+</svg>      
+<svg width="370" height="350" style="border: double">
+    <!--Trimetric-->
+    <polyline points="120,300 120,200 27,166 27,266 120,300" style="fill:orange;stroke:black;stroke-width:2"/>
+    <polyline points="120,300 120,200 178,132 178,232 120,300" style="fill:blue;stroke:black;stroke-width:2"/>
+    <polyline points="120,200 27,166 84,97 178,132 120,200" style="fill:white;stroke:black;stroke-width:2"/>
+    <line x1="84" y1="97" x2="84" y2="197" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="84" y1="197" x2="27" y2="266" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="84" y1="197" x2="178" y2="232" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <text x="130" y="25" >Trimetric view</text> 
+</svg>
+    </body>
+</html>

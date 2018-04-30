@@ -1,0 +1,45 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Perspective view</title>
+    </head>
+    <body><ul>
+            
+            <li><input type="button" name="home" value="Home" title="MainPage" onclick="location.href='MainPage.html';"> <br><br></li>
+        </ul>
+        <p><b>Perspective views of a cube</b></p>
+        <svg width="370" height="350" style="border:double">
+    <!--1 point view-->
+    <text x="130" y="25">1-point view</text>
+    <polyline points="50,200 150,200 150,100 50,100 50,200" style="fill:orange;stroke:black;stroke-width:2" />
+    <line x1="60" y1="190" x2="140" y2="190" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="140" y1="190" x2="140" y2="110" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="140" y1="110" x2="60" y2="110" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="60" y1="110" x2="60" y2="190" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="60" y1="190" x2="50" y2="200" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="140" y1="190" x2="150" y2="200" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="150" y1="100" x2="140" y2="110" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+    <line x1="50" y1="100" x2="60" y2="110" stroke-width="2" stroke="black" stroke-dasharray="3"/>
+   
+</svg>
+<svg width="370" height="350" style="border: double">
+    <!--2 point view-->
+    <text x="130" y="25">2-point view</text>
+    <polyline points="200,300 200,200 130,205 130,295 200,300" style="fill:orange;stroke:black;stroke-width:2" />
+    <polyline points="200,300 200,200 270,205 270,295 200,300" style="fill:blue;stroke:black;stroke-width:2" />
+     
+</svg>
+<svg width="370" height="350" style="border: double">
+    <!--3 point view-->
+    <text x="130" y="25">3-point view</text>
+    <polyline points="125,325 115,225 206,182 207,268 125,325" style="fill:blue;stroke:black;stroke-width:2" />
+    <polyline points="125,325 115,225 38,181 49,261 125,325" style="fill:orange;stroke:black;stroke-width:2" />
+    <polyline points="115,225 38,181 130,139 206,182 115,225" style="fill:white;stroke:black;stroke-width:2" />
+     
+</svg>
+    </body>
+</html>
